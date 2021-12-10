@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='normalize.css' type='text/css' media='screen'>
+    <title>Isabella Carelli</title>
+    <link rel="icon" href="pics/white-lotus.png" type="image/icon">
+    <script defer src="info.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <img src="pics/pnghut_aang-symbol-air-nomads-water.png" alt="Logo" />
+        <h1>Info</h1>
+    </div>
+    <div id="formContainer">
+        <div id="formpage" class="left column">
+            <img src="pics/white-lotus.png" alt="white-lotus" />
+            <h1>Directory</h1>
+            <ul>
+                <li> <a href="honesty.html">Honesty Page</a> </li>
+                <li> <a href="info.html">Info</a> </li>
+                <li> <a href="reflection.html">Reflection</a> </li>
+            </ul>
+        </div>
+
+        <div class="form column">
+
+            <h1>Sign-up page</h1>
+            <form id='signup' name='signup' action='https://httpbin.org/post' method='post'>
+
+
+                <label for="fName">First Name</label><br>
+                <input id="fName" name="fName" type="text" placeholder="First name goes here"><br>
+
+                <label for="lName">Last Name</label><br>
+                <input id="lName" name="lName" type="text" placeholder="Last name goes here"><br>
+
+                <label for="age">Age</label><br>
+                <input type="number" id="age" name="age" placeholder="18-60" min ="18" max="60"><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="email@example.com"><br><br>
+
+                <label>Education Level</label><br>
+                <input type="radio" id="Graduated" name="Education_level" value="Graduated">
+                <label for="Graduated">Graduated</label><br>
+                <input type="radio" id="CurrentEnrolled" name="Education_level" value="Current Enrolled">
+                <label for="CurrentEnrolled">Current Enrolled</label><br>
+                <input type="radio" id="DidnotGrad" name="Education_level" value="Did not graduate">
+                <label for="DidnotGrad">Did not graduate</label><br><br>
+
+
+                <label for="username">Username</label><br>
+                <input type="text" id="username" name="username"><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="minumum 6 characters"><br>
+
+                <label for="password2">Re-enter Password</label><br>
+                <input type="password" id="password2" name="password2" placeholder="Please re-enter your password"><br>
+
+                <input type="submit" value=" Submit ">
+                <input type="reset" value=" Clear " onclick="clearShowErrors();">
+
+                <input type="hidden" name="lastName" id="lastName" value="Carelli" />
+                <input type="hidden" name="studentId" id="studentId" value="100649219" />
+            </form>
+
+
+        </div>
+        <div id="error" class="error hidden column">
+            <h1>Errors!</h1>
+        </div>
+
+    </div>
+     <footer id="infoFoot">2021 Isabella Valentina Carelli </footer> 
+</body>
